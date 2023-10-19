@@ -1,0 +1,27 @@
+.button {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 15px 50px;
+    width: fit-content;
+}
+
+.button.dark {
+    background-color: deepskyblue;
+    color: white;
+    border: none;
+
+}
+
+.button.light {
+    border: solid deepskyblue;
+    color: deepskyblue;
+    background-color: white;
+}
+
+.button:hover { 
+    background-color: lightskyblue;
+    color: white;
+    border: solid lightskyblue;
+}

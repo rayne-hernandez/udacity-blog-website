@@ -1,0 +1,19 @@
+.author {
+    display: flex;
+    padding: 1px;
+    column-gap: 5px;
+    background-color: white;
+    align-items: center;
+}
+
+.author:hover {
+    background-color: white;
+}
+
+.authorimg {
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px;
+    height: 70px;
+    width: 70px;
+}

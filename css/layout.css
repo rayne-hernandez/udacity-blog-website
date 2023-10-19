@@ -1,0 +1,15 @@
+footer {
+    background-color: grey;
+    margin: 20px 0px;
+    border-radius: 5px;
+    padding: 10px;
+    color: white;
+}
+
+.layout {
+    padding: 15px;
+}
+
+.navbar {
+    padding: 10px;
+}

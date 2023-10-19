@@ -1,0 +1,25 @@
+.cardheader {
+    line-height: 10px;
+    font-size: 30px;
+}
+
+.cardlink {
+    text-decoration: none;
+    color: black;
+}
+
+.cardimg {
+    width: 100%;
+    border-radius: 3%;
+}
+
+.card {
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+}
+
+.card:hover {
+    background-color: gainsboro;
+}

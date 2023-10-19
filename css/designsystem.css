@@ -1,0 +1,84 @@
+@import 'typography.css';
+@import 'layout.css';
+@import 'button.css';
+@import 'card.css';
+@import 'author.css';
+@import 'navlink.css';
+
+.layout {
+    display: grid;
+    grid-template: auto auto auto / 15% 85%;
+    grid-template-areas:
+        'back back'
+        'none head'
+        'nav cont';
+}
+
+.back {
+    grid-area: back;
+}
+
+.header {
+    grid-area: head;
+}
+
+.navbar {
+    grid-area: nav;
+}
+
+.content {
+    grid-area: cont;
+}
+
+.colorsample {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 95px;
+    margin: 10px;
+}
+
+.deepskyblue {
+    background-color: deepskyblue;
+}
+
+.lightskyblue {
+    background-color: lightskyblue;
+}
+
+.grey {
+    background-color: grey;
+}
+
+.lightgrey {
+    background-color: lightgrey;
+}
+
+.gainsboro {
+    background-color: gainsboro;
+}
+
+.button {
+    margin: 10px;
+}
+
+@media (max-width: 1250px) {
+    .layout {
+        grid-template: auto auto auto auto / 100%;
+        grid-template-areas:
+            'back'
+            'head'
+            'nav'
+            'cont';
+    }
+
+    h1 {
+        text-align: center;
+    }
+
+    .navlinklist {
+        align-items: center;
+    }
+}

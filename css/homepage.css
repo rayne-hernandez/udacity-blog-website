@@ -1,0 +1,82 @@
+@import 'typography.css';
+@import 'layout.css';
+@import 'button.css';
+@import 'card.css';
+@import 'navlink.css';
+
+.layout {
+    display: grid;
+    grid-template: auto 80% 100px / 20% 80%;
+    grid-template-areas:
+        'head head'
+        'nav cont'
+        'foot foot';
+}
+
+.header {
+    grid-area: head;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    grid-area: nav;
+    row-gap: 20px;
+    padding: 10px;
+}
+
+.contentintro {
+    margin: 20px
+}
+
+.content {
+    grid-area: cont;
+    font-size: 20px;
+    padding: 0px 15px;
+}
+
+.cards {
+    display: flex;
+    column-gap: 20px;
+}
+
+footer {
+    grid-area: foot;
+}
+
+@media (max-width: 1000px) {
+    .layout {
+        grid-template: auto auto 80% 100px / 100%;
+        grid-template-areas:
+            'head'
+            'nav'
+            'cont'
+            'foot';
+    }
+
+    .header {
+        text-align: center;
+    }
+
+    .navlinklist {
+        text-align: center;
+    }
+
+    .navbar {
+        align-items: center;
+    }
+
+    .contentintro {
+        text-align: center;
+    }
+
+    .cards {
+        flex-direction: column;
+        row-gap: 20px;
+        align-items: center;
+    }
+
+    .card {
+        max-width: 100%;
+    }
+}

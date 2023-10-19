@@ -1,0 +1,11 @@
+.social.share {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+}
+
+.social.icon {
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+}
